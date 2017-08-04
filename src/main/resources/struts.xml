@@ -29,5 +29,5 @@
 
 	<package name="basePackage" extends="struts-default">
 	</package>
-
+	
 </struts>

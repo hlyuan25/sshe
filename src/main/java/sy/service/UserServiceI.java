@@ -1,12 +1,18 @@
 package sy.service;
 
-import java.io.Serializable;
-
+import sy.model.DataGrid;
 import sy.model.Tuser;
+import sy.pageModel.User;
 
 public interface UserServiceI {
 	
-	public void test();
+	public User save(User user);
 	
-	public Serializable save(Tuser t);
+	public User login(User user);
+
+	public DataGrid datagrid(User user);
+
+	public void remove(String ids);
+	
+	public User edit(User user);
 }

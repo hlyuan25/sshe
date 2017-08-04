@@ -1,16 +1,14 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<%@ page language="java" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE HTML >
 <html>
 <head>
-
-<title>My JSP 'index.jsp' starting page</title>
+<title>SSHE DEMO</title>
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="This is my page">
-
 <script type="text/javascript"
 	src="jslib/jquery-easyui-1.3.1/jquery-1.8.0.min.js"></script>
 <script type="text/javascript"
@@ -23,85 +21,22 @@
 <link rel="stylesheet" href="jslib/jquery-easyui-1.3.1/themes/icon.css"
 	type="text/css"></link>
 <script type="text/javascript" src="jslib/syUtil.js"></script>
-<script type="text/javascript">
-	$(function() {
-		$('#index_regForm').form({
-			url :'',
-			success : function(data) {
-				alert(data);
-			}
-		});
-	});
-</script>
 </head>
 <body class="easyui-layout">
-	<div data-options="region:'north',split:true" style="height:100px;"></div>
-	<div data-options="region:'south',title:'South Title',split:true"
-		style="height:100px;"></div>
-	<div data-options="region:'east',title:'East',split:true"
-		style="width:100px;"></div>
-	<div data-options="region:'west',split:true" style="width:100px;">
-		<div class="easyui-panel"
-			data-options="title:'sss',border:false,fit:true"></div>
+	<div data-options="region:'north'" style="height:60px;"></div>
+	<div data-options="region:'south'" style="height:20px;"></div>
+	<div data-options="region:'west'" style="width:200px;">
+		<jsp:include page="layout/west.jsp"></jsp:include>
 	</div>
-	<div data-options="region:'center',title:'center title'"
-		style="padding:5px;background:#eee;"></div>
-	<div class="easyui-dialog"
-		data-options="title:'登录',modal:true,closable:false,buttons:[{
-				text:'注册',
-				iconCls:'icon-edit',
-				handler:function(){
-					$('#index_regDialog').dialog('open');
-				}
-			},{
-				text:'登录',
-				iconCls:'icon-help',
-				handler:function(){alert('help')}
-			}]">
-		<table>
-			<tr>
-				<th>登录名</th>
-				<td><input />
-				</td>
-			</tr>
-			<tr>
-				<th>密码</th>
-				<td><input />
-				</td>
-			</tr>
-		</table>
+	<div data-options="region:'east',title:'east',split:true"
+		style="width:200px;"></div>
+	<div data-options="region:'center',title:'欢迎使用SSHE示例系统'"
+		style="overflow: hidden;">
+		<jsp:include page="layout/center.jsp"></jsp:include>
+	</div>
 
-	</div>
-	<div id="index_regDialog" style="width:250px;" class="easyui-dialog" data-options="title:'注册',closed:true,modal:true,buttons:[{
-				text:'注册',
-				iconCls:'icon-edit',
-				handler:function(){
-					$('#index_regForm').submit();
-				}
-			}]">
-		<form id="index_regForm" method="post">
-			<table>
-				<tr>
-					<th>登录名</th>
-					<td><input name="name" class="easyui-validatebox"
-						data-options="required:true,missingMessage:'登录名是必须的'" />
-					</td>
-				</tr>
-				<tr>
-					<th>密码</th>
-					<td><input name="pwd" type="password"
-						class="easyui-validatebox" data-options="required:true" />
-					</td>
-				</tr>
-				<tr>
-					<th>重复密码</th>
-					<td><input name="rePwd" type="password"
-						class="easyui-validatebox"
-						data-options="required:true,validType:'eqPwd[\'#index_regForm input[name=pwd]\']'" />
-					</td>
-				</tr>
-			</table>
-		</form>
-	</div>
+	<jsp:include page="user/login.jsp"></jsp:include>
+
+	<jsp:include page="user/reg.jsp"></jsp:include>
 </body>
 </html>

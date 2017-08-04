@@ -692,3 +692,69 @@ Caused by: java.lang.ClassNotFoundException: org.hibernate.service.jta.platform.
 		{ID:566954109, ConnectTime:"2016-08-07 22:10:53", UseCount:2, LastActiveTime:"2016-08-07 22:10:53"}
 	]
 }] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-08-12 22:13:59,273][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@64030c4: startup date [Fri Aug 12 22:13:59 CST 2016]; root of context hierarchy
+[INFO][2016-08-12 22:13:59,335][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-08-12 22:13:59,583][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-08-12 22:13:59,896][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[ERROR][2016-08-12 22:14:00,163][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-08-12 22:14:00,342][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-08-12 22:14:00,820][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[INFO][2016-08-12 22:14:00,827][org.hibernate.Version]HHH000412: Hibernate Core {4.3.5.Final}
+[INFO][2016-08-12 22:14:00,828][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-08-12 22:14:00,830][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-08-12 22:14:01,223][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-08-12 22:14:01,415][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-08-12 22:14:01,433][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-08-12 22:14:01,760][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-08-12 22:14:01,760][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-08-12 22:14:01,767][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-08-12 22:14:01,784][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sy.tuser
+[INFO][2016-08-12 22:14:01,784][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, pwd, name, modifydatetime, createdatetime]
+[INFO][2016-08-12 22:14:01,784][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-08-12 22:14:01,785][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-08-12 22:14:01,785][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-08-12 22:14:01,860][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-08-12 22:14:00",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:840541992, ConnectTime:"2016-08-12 22:14:01", UseCount:2, LastActiveTime:"2016-08-12 22:14:01"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-08-12 22:43:26,391][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@64030c4: startup date [Fri Aug 12 22:43:26 CST 2016]; root of context hierarchy
+[INFO][2016-08-12 22:43:26,440][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-08-12 22:43:26,652][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-08-12 22:43:26,877][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[ERROR][2016-08-12 22:43:27,045][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-08-12 22:43:27,119][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-08-12 22:43:27,441][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[INFO][2016-08-12 22:43:27,448][org.hibernate.Version]HHH000412: Hibernate Core {4.3.5.Final}
+[INFO][2016-08-12 22:43:27,450][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-08-12 22:43:27,451][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-08-12 22:43:27,786][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-08-12 22:43:27,906][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-08-12 22:43:27,910][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-08-12 22:43:28,151][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-08-12 22:43:28,151][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-08-12 22:43:28,153][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-08-12 22:43:28,170][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sy.tuser
+[INFO][2016-08-12 22:43:28,170][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, pwd, name, modifydatetime, createdatetime]
+[INFO][2016-08-12 22:43:28,171][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-08-12 22:43:28,171][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-08-12 22:43:28,171][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-08-12 22:43:28,245][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-08-12 22:43:26",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:840541992, ConnectTime:"2016-08-12 22:43:27", UseCount:2, LastActiveTime:"2016-08-12 22:43:28"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
